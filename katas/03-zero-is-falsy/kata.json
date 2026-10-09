@@ -1,0 +1,10 @@
+{
+  "id": "03",
+  "slug": "zero-is-falsy",
+  "title": "The discount that wouldn't be zero",
+  "lang": "python",
+  "module": "discounts",
+  "level": 1,
+  "category": "logic",
+  "prompt": "Return the discount percentage for a customer. Use 10% if they don't have a custom one."
+}

@@ -1,0 +1,10 @@
+{
+  "id": "06",
+  "slug": "parse-int",
+  "title": "Zero items, one in the cart",
+  "lang": "javascript",
+  "module": "quantity",
+  "level": 1,
+  "category": "data",
+  "prompt": "Parse the quantity field from the order form."
+}

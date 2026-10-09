@@ -1,0 +1,10 @@
+{
+  "id": "20",
+  "slug": "n-plus-one",
+  "title": "Fifty-one queries for fifty orders",
+  "lang": "python",
+  "module": "orders_report",
+  "level": 3,
+  "category": "performance",
+  "prompt": "Print each order with its customer's name."
+}

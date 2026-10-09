@@ -1,0 +1,10 @@
+{
+  "id": "10",
+  "slug": "swallowed-exception",
+  "title": "Everything saved (probably)",
+  "lang": "python",
+  "module": "bulk_save",
+  "level": 2,
+  "category": "errors",
+  "prompt": "Save a batch of records. One bad record shouldn't crash the whole batch."
+}

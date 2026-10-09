@@ -1,0 +1,10 @@
+{
+  "id": "21",
+  "slug": "redos-email",
+  "title": "The email regex that melts your CPU",
+  "lang": "python",
+  "module": "email_check",
+  "level": 3,
+  "category": "performance",
+  "prompt": "Write a regex to validate email addresses on the signup form."
+}

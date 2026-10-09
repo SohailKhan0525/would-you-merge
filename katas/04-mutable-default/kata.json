@@ -1,0 +1,10 @@
+{
+  "id": "04",
+  "slug": "mutable-default",
+  "title": "The log that remembers everything",
+  "lang": "python",
+  "module": "audit_log",
+  "level": 1,
+  "category": "logic",
+  "prompt": "Add a helper that records an audit event, optionally into an existing log list."
+}

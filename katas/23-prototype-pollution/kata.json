@@ -1,0 +1,10 @@
+{
+  "id": "23",
+  "slug": "prototype-pollution",
+  "title": "Merge, and pollute everything",
+  "lang": "javascript",
+  "module": "merge",
+  "level": 3,
+  "category": "security",
+  "prompt": "Write a deep merge for config objects."
+}

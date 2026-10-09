@@ -1,0 +1,10 @@
+{
+  "id": "19",
+  "slug": "secret-in-logs",
+  "title": "Debug logging, with credentials",
+  "lang": "javascript",
+  "module": "requestlog",
+  "level": 2,
+  "category": "security",
+  "prompt": "Log every outgoing API request so we can debug."
+}

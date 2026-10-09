@@ -1,0 +1,40 @@
+name: Kata of the week
+
+# Every Monday: feature a different kata in the README and refresh the kata table.
+# (This keeps the front page fresh. New katas are what actually keep the project alive, so keep adding them.)
+
+on:
+  schedule:
+    - cron: "17 6 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  rotate:
+    if: ${{ !github.event.repository.fork }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Pick this week's kata and rebuild the table
+        run: |
+          python tools/featured.py
+          python tools/build_index.py
+
+      - name: Commit if the README changed
+        run: |
+          if git diff --quiet; then
+            echo "Nothing to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -am "chore: kata of the week"
+          git push

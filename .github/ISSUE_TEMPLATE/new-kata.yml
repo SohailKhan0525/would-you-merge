@@ -1,0 +1,73 @@
+name: Suggest a kata
+description: You've seen an AI (or a human) write a bug that deserves a spot here.
+title: "Kata idea: "
+labels: ["kata idea"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks! Check [docs/KATA-IDEAS.md](../blob/main/docs/KATA-IDEAS.md) first, since your idea may already be listed (and claimable).
+  - type: input
+    id: slug
+    attributes:
+      label: Short name
+      description: kebab-case, e.g. `regex-g-flag-test`
+    validations:
+      required: true
+  - type: dropdown
+    id: language
+    attributes:
+      label: Language
+      options:
+        - Python
+        - JavaScript
+        - Other (please say which in the description)
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Bug class
+      options:
+        - hallucination
+        - boundaries
+        - security
+        - async
+        - data
+        - errors
+        - logic
+        - performance
+    validations:
+      required: true
+  - type: textarea
+    id: prompt
+    attributes:
+      label: What did the user ask the AI?
+      placeholder: "Write a function that..."
+    validations:
+      required: true
+  - type: textarea
+    id: code
+    attributes:
+      label: The buggy code
+      description: Keep it short and realistic. One bug.
+      render: text
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: What is wrong, and why is it easy to miss?
+    validations:
+      required: true
+  - type: textarea
+    id: fix
+    attributes:
+      label: A correct fix (optional)
+      render: text
+  - type: checkboxes
+    id: pr
+    attributes:
+      label: Do you want to build it?
+      options:
+        - label: I'll open a PR for this kata (see CONTRIBUTING.md)

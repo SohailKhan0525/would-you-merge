@@ -1,0 +1,10 @@
+{
+  "id": "12",
+  "slug": "shallow-copy",
+  "title": "Tenant A's database host, now with Tenant B",
+  "lang": "python",
+  "module": "config_merge",
+  "level": 2,
+  "category": "data",
+  "prompt": "Make a per-tenant config from the defaults without changing the defaults."
+}

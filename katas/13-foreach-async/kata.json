@@ -1,0 +1,10 @@
+{
+  "id": "13",
+  "slug": "foreach-async",
+  "title": "Done before it started",
+  "lang": "javascript",
+  "module": "batch",
+  "level": 2,
+  "category": "async",
+  "prompt": "Write processAll(ids, fn) that runs an async function on each id and returns the results in order."
+}

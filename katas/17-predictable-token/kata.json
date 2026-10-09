@@ -1,0 +1,10 @@
+{
+  "id": "17",
+  "slug": "predictable-token",
+  "title": "An unguessable token (if you can't guess the seed)",
+  "lang": "python",
+  "module": "tokens",
+  "level": 2,
+  "category": "security",
+  "prompt": "Generate a password-reset token for a user."
+}

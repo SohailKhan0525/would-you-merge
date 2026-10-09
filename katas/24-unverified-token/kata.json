@@ -1,0 +1,10 @@
+{
+  "id": "24",
+  "slug": "unverified-token",
+  "title": "Decode is not verify",
+  "lang": "javascript",
+  "module": "session",
+  "level": 3,
+  "category": "security",
+  "prompt": "Verify the signed session token from the cookie."
+}

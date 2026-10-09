@@ -1,0 +1,44 @@
+name: Release
+
+# Push a tag like v0.2.0 to publish a GitHub Release with an offline zip of the whole project.
+
+on:
+  push:
+    tags: ["v*"]
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    if: ${{ !github.event.repository.fork }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Verify everything before publishing
+        run: |
+          python tools/verify_katas.py --strict --require-all
+          python tools/build_index.py --check
+
+      - name: Build the offline bundle
+        run: |
+          mkdir -p dist
+          git archive --format=zip --prefix=would-you-merge/ -o "dist/would-you-merge-${GITHUB_REF_NAME}.zip" HEAD
+
+      - name: Create the release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "$GITHUB_REF_NAME" dist/*.zip \
+            --title "would-you-merge ${GITHUB_REF_NAME}" \
+            --generate-notes

@@ -1,0 +1,10 @@
+{
+  "id": "08",
+  "slug": "float-money",
+  "title": "A cent short",
+  "lang": "python",
+  "module": "money",
+  "level": 2,
+  "category": "data",
+  "prompt": "Add up a list of item prices and give me the total in cents."
+}

@@ -1,0 +1,10 @@
+{
+  "id": "14",
+  "slug": "missing-await-try",
+  "title": "A try/catch that catches nothing",
+  "lang": "javascript",
+  "module": "safe",
+  "level": 2,
+  "category": "async",
+  "prompt": "Write safe(fn) that calls an async function and returns a fallback instead of throwing."
+}

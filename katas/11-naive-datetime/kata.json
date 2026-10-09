@@ -1,0 +1,10 @@
+{
+  "id": "11",
+  "slug": "naive-datetime",
+  "title": "Expired in a different timezone",
+  "lang": "python",
+  "module": "expiry",
+  "level": 2,
+  "category": "data",
+  "prompt": "Check whether an invite link has expired. Expiry timestamps are stored as ISO-8601 UTC."
+}

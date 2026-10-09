@@ -1,0 +1,32 @@
+name: Problem with a kata
+description: A test is too strict, too loose, flaky, or an explanation is wrong.
+title: "Kata NN: "
+labels: ["kata problem"]
+body:
+  - type: input
+    id: kata
+    attributes:
+      label: Which kata?
+      placeholder: "07-chunk-off-by-one"
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What kind of problem?
+      options:
+        - A correct fix is rejected by the tests (too strict)
+        - The tests pass on buggy code (too loose)
+        - Flaky or slow
+        - The explanation or hint is wrong or misleading
+        - Doesn't run on my OS or runtime version
+        - Something else
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: If a valid fix was rejected, paste it. Include your OS and Python/Node versions.
+    validations:
+      required: true

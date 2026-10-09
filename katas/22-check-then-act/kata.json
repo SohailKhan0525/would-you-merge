@@ -1,0 +1,10 @@
+{
+  "id": "22",
+  "slug": "check-then-act",
+  "title": "Two withdrawals walk into a bank",
+  "lang": "javascript",
+  "module": "bank",
+  "level": 3,
+  "category": "async",
+  "prompt": "Write withdraw(account, amount) for our ledger. Don't let the balance go negative."
+}

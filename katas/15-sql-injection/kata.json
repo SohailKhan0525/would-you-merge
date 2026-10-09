@@ -1,0 +1,10 @@
+{
+  "id": "15",
+  "slug": "sql-injection",
+  "title": "Little Bobby Tables, again",
+  "lang": "python",
+  "module": "users_db",
+  "level": 2,
+  "category": "security",
+  "prompt": "Look up a user by name in SQLite."
+}

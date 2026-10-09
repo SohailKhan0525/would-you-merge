@@ -1,0 +1,10 @@
+{
+  "id": "09",
+  "slug": "mutate-while-iterating",
+  "title": "Every other expired session",
+  "lang": "python",
+  "module": "cleanup",
+  "level": 2,
+  "category": "logic",
+  "prompt": "Remove expired sessions from the list."
+}

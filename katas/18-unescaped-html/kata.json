@@ -1,0 +1,10 @@
+{
+  "id": "18",
+  "slug": "unescaped-html",
+  "title": "The comment that runs code",
+  "lang": "javascript",
+  "module": "comments",
+  "level": 2,
+  "category": "security",
+  "prompt": "Render a comment as an HTML snippet."
+}

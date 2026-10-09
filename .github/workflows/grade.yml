@@ -1,0 +1,55 @@
+name: Grade my fork
+
+# Runs in YOUR fork (not upstream). Enable it once: Actions tab -> "I understand my workflows, go ahead and enable them".
+# It grades your katas, prints a scoreboard in the run summary, and publishes a score badge
+# (badge.json) to a "badges" branch of your fork.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: grade-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  grade:
+    if: ${{ github.event.repository.fork }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Grade every kata
+        id: grade
+        run: python tools/progress.py --out "$RUNNER_TEMP/progress"
+
+      - name: Show the scoreboard in the run summary
+        run: cat "$RUNNER_TEMP/progress/PROGRESS.md" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Publish the badge to the "badges" branch of this fork
+        env:
+          SCORE: ${{ steps.grade.outputs.score }}
+        run: |
+          set -euo pipefail
+          out="$RUNNER_TEMP/progress"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout --orphan badges-publish
+          git rm -rf . > /dev/null 2>&1 || true
+          cp "$out/badge.json" "$out/progress.json" "$out/PROGRESS.md" .
+          git add badge.json progress.json PROGRESS.md
+          git commit -m "progress: ${SCORE}"
+          git push --force origin badges-publish:badges
