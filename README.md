@@ -120,13 +120,13 @@ _24 katas · 14 Python · 10 JavaScript_
 <!-- KATAS:END -->
 
 <!-- FEATURED:START -->
-### 🎯 Kata of the week: [20 · Fifty-one queries for fifty orders](katas/20-n-plus-one/)
+### 🎯 Kata of the week: [21 · The email regex that melts your CPU](katas/21-redos-email/)
 
 `python` · 🐌 `performance` · level ★★★
 
-> 🤖 **The prompt:** "Print each order with its customer's name."
+> 🤖 **The prompt:** "Write a regex to validate email addresses on the signup form."
 
-**Would you merge it?** [Open the kata →](katas/20-n-plus-one/)
+**Would you merge it?** [Open the kata →](katas/21-redos-email/)
 <!-- FEATURED:END -->
 
 ## Share your score
