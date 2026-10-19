@@ -120,13 +120,13 @@ _24 katas · 14 Python · 10 JavaScript_
 <!-- KATAS:END -->
 
 <!-- FEATURED:START -->
-### 🎯 Kata of the week: [21 · The email regex that melts your CPU](katas/21-redos-email/)
+### 🎯 Kata of the week: [22 · Two withdrawals walk into a bank](katas/22-check-then-act/)
 
-`python` · 🐌 `performance` · level ★★★
+`javascript` · ⏳ `async` · level ★★★
 
-> 🤖 **The prompt:** "Write a regex to validate email addresses on the signup form."
+> 🤖 **The prompt:** "Write withdraw(account, amount) for our ledger. Don't let the balance go negative."
 
-**Would you merge it?** [Open the kata →](katas/21-redos-email/)
+**Would you merge it?** [Open the kata →](katas/22-check-then-act/)
 <!-- FEATURED:END -->
 
 ## Share your score
