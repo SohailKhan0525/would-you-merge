@@ -120,13 +120,13 @@ _24 katas · 14 Python · 10 JavaScript_
 <!-- KATAS:END -->
 
 <!-- FEATURED:START -->
-### 🎯 Kata of the week: [22 · Two withdrawals walk into a bank](katas/22-check-then-act/)
+### 🎯 Kata of the week: [23 · Merge, and pollute everything](katas/23-prototype-pollution/)
 
-`javascript` · ⏳ `async` · level ★★★
+`javascript` · 🔐 `security` · level ★★★
 
-> 🤖 **The prompt:** "Write withdraw(account, amount) for our ledger. Don't let the balance go negative."
+> 🤖 **The prompt:** "Write a deep merge for config objects."
 
-**Would you merge it?** [Open the kata →](katas/22-check-then-act/)
+**Would you merge it?** [Open the kata →](katas/23-prototype-pollution/)
 <!-- FEATURED:END -->
 
 ## Share your score
