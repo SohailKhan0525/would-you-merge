@@ -120,13 +120,13 @@ _24 katas · 14 Python · 10 JavaScript_
 <!-- KATAS:END -->
 
 <!-- FEATURED:START -->
-### 🎯 Kata of the week: [23 · Merge, and pollute everything](katas/23-prototype-pollution/)
+### 🎯 Kata of the week: [24 · Decode is not verify](katas/24-unverified-token/)
 
 `javascript` · 🔐 `security` · level ★★★
 
-> 🤖 **The prompt:** "Write a deep merge for config objects."
+> 🤖 **The prompt:** "Verify the signed session token from the cookie."
 
-**Would you merge it?** [Open the kata →](katas/23-prototype-pollution/)
+**Would you merge it?** [Open the kata →](katas/24-unverified-token/)
 <!-- FEATURED:END -->
 
 ## Share your score
