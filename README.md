@@ -120,13 +120,13 @@ _24 katas · 14 Python · 10 JavaScript_
 <!-- KATAS:END -->
 
 <!-- FEATURED:START -->
-### 🎯 Kata of the week: [24 · Decode is not verify](katas/24-unverified-token/)
+### 🎯 Kata of the week: [01 · The package that doesn't exist](katas/01-hallucinated-import/)
 
-`javascript` · 🔐 `security` · level ★★★
+`python` · 👻 `hallucination` · level ★☆☆
 
-> 🤖 **The prompt:** "Verify the signed session token from the cookie."
+> 🤖 **The prompt:** "Write a function that turns a blog post title into a URL slug. Handle accents."
 
-**Would you merge it?** [Open the kata →](katas/24-unverified-token/)
+**Would you merge it?** [Open the kata →](katas/01-hallucinated-import/)
 <!-- FEATURED:END -->
 
 ## Share your score
