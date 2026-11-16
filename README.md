@@ -120,13 +120,13 @@ _24 katas · 14 Python · 10 JavaScript_
 <!-- KATAS:END -->
 
 <!-- FEATURED:START -->
-### 🎯 Kata of the week: [01 · The package that doesn't exist](katas/01-hallucinated-import/)
+### 🎯 Kata of the week: [02 · Page one goes missing](katas/02-pagination-off-by-one/)
 
-`python` · 👻 `hallucination` · level ★☆☆
+`python` · 📏 `boundaries` · level ★☆☆
 
-> 🤖 **The prompt:** "Write a function that turns a blog post title into a URL slug. Handle accents."
+> 🤖 **The prompt:** "Write a paginate helper for my API. Pages start at 1."
 
-**Would you merge it?** [Open the kata →](katas/01-hallucinated-import/)
+**Would you merge it?** [Open the kata →](katas/02-pagination-off-by-one/)
 <!-- FEATURED:END -->
 
 ## Share your score
