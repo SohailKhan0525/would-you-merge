@@ -120,13 +120,13 @@ _24 katas · 14 Python · 10 JavaScript_
 <!-- KATAS:END -->
 
 <!-- FEATURED:START -->
-### 🎯 Kata of the week: [02 · Page one goes missing](katas/02-pagination-off-by-one/)
+### 🎯 Kata of the week: [03 · The discount that wouldn't be zero](katas/03-zero-is-falsy/)
 
-`python` · 📏 `boundaries` · level ★☆☆
+`python` · 🧠 `logic` · level ★☆☆
 
-> 🤖 **The prompt:** "Write a paginate helper for my API. Pages start at 1."
+> 🤖 **The prompt:** "Return the discount percentage for a customer. Use 10% if they don't have a custom one."
 
-**Would you merge it?** [Open the kata →](katas/02-pagination-off-by-one/)
+**Would you merge it?** [Open the kata →](katas/03-zero-is-falsy/)
 <!-- FEATURED:END -->
 
 ## Share your score
